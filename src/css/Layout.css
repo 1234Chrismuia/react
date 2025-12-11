@@ -1,0 +1,39 @@
+/* src/Layout.css */
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--background-color);
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+}
+
+/* Content container for pages */
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+/* Full page for login/special pages */
+.full-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1rem;
+  }
+}
