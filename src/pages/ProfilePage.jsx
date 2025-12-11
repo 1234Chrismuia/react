@@ -2,7 +2,7 @@ import { useContext, useState, useEffect, useMemo } from 'react';
 import { AuthContext } from '../context/AuthContext';
 import Button from '../components/Button';
 import Card from '../components/Card';
-import "../css/Profilepage.css";
+import "../css/ProfilePage.css";
 
 const ProfilePage = () => {
   const { auth } = useContext(AuthContext);
