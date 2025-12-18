@@ -1,0 +1,100 @@
+.error-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  padding: 2rem;
+}
+
+.error-card {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.error-content {
+  padding: 2rem;
+}
+
+.error-title {
+  font-size: 2.5rem;
+  color: var(--error-color);
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.error-details {
+  background-color: var(--background-color);
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 2rem;
+  text-align: left;
+  border-left: 4px solid var(--error-color);
+}
+
+.error-details p {
+  margin: 0;
+  font-family: monospace;
+}
+
+.error-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.error-links {
+  text-align: left;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.error-links p {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.error-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.error-links li {
+  margin-bottom: 0.5rem;
+}
+
+.error-links a {
+  color: var(--primary-color);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.error-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .error-title {
+    font-size: 2rem;
+  }
+  
+  .error-actions {
+    flex-direction: column;
+  }
+  
+  .error-actions button {
+    width: 100%;
+  }
+}
